@@ -11,6 +11,7 @@
     },
     "build": {
         "includeDir": ".",
+        "extraScript": "extra_script.py",
         "flags": [
             "-I repo/libraries/azure-sdk-for-c/sdk/inc",
             "-I repo/ports/coreMQTT",
@@ -32,7 +33,6 @@
             "-I common/utilities",
             "-I config",
             "-I $PROJECT_CORE_DIR/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include/freertos",
-            "-Wno-stringop-truncation",
             "-include repo/libraries/coreHTTP/source/dependency/3rdparty/http_parser/http_parser.h"
         ],
         "srcDir": ".",
