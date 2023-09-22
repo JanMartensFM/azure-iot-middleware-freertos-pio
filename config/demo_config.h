@@ -229,6 +229,8 @@
 #define democonfigADU_DEVICE_MODEL           "ESP32-Azure-IoT-Kit"
 #define democonfigADU_UPDATE_PROVIDER        "Contoso"
 #define democonfigADU_UPDATE_NAME            "ESP32-Azure-IoT-Kit"
-#define democonfigADU_UPDATE_VERSION         "1.0"
+#ifndef democonfigADU_UPDATE_VERSION
+    #define democonfigADU_UPDATE_VERSION         "1.0.0"
+#endif
 
 #endif /* DEMO_CONFIG_H */
